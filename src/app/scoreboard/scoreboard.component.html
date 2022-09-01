@@ -1,0 +1,59 @@
+
+  <div class="container mt-2 main-div background: url(images/nba_background.jpg) no-repeat center center fixed; ">
+    <div class="pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 py-5 mb-1">
+            <div class="table-responsive">
+              <table class="table styled-table">
+                <thead>
+                  <tr class="active-row">
+                    <th class="border-0 bg-light" scope="col">
+                      <div class="p-2 px-3 text-uppercase">Date</div>
+                    </th>
+                    <th class="border-0 bg-light" scope="col">
+                      <div class="p-2 px-3 text-uppercase aling-middle text-center">Home Team Name</div>
+                    </th>
+                    <th class="border-0 bg-light" scope="col">
+                      <div class="p-2 px-3 text-uppercase">Home Team Score</div>
+                    </th>
+                    <th class="border-0 bg-light" scope="col">
+                      <div class="p-2 px-3 text-uppercase">Visitator Team Name</div>
+                    </th>
+                    <th class="border-0 bg-light" scope="col">
+                      <div class="p-2 px-3 text-uppercase aling-middle text-center">Visitator Team Score</div>
+                    </th>
+                    <th class="border-0 bg-light" scope="col">
+                      <div class="p-2 px-3 text-uppercase aling-middle text-center">Season</div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let game of games">
+                    <td class="aling-middle text-center">
+                      <strong>{{game.date}}</strong>
+                    </td>
+                    <td class="aling-middle text-center">
+                      <strong>{{game.homeTeamName}}</strong>
+                    </td>
+                    <td class="aling-middle text-center">
+                      <strong>{{game.homeTeamScore}}</strong>
+                    </td>
+                    <td class="aling-middle text-center">
+                      <strong>{{game.visitatorTeamName}}</strong>
+                    </td>
+                    <td class="aling-middle text-center">
+                      <strong>{{game.visitatorTeamScore}}</strong>
+                    </td>
+                    <td class="aling-middle text-center">
+                      <strong>{{game.season}}</strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
